@@ -1,0 +1,28 @@
+{
+  "name": "apple-site-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "cross-env TAILWIND_MODE=build postcss ./src/input.css -o ./dist/output.css --verbose",
+    "tw:prod": "cross-env NODE_ENV=production postcss build ./src/input.css -o ./dist/output.css -w --verbose --minify",
+    "tw:watch": "onchange tailwind.config.js src/**/*.css src/**/*.html -- npm run tw:build"
+  },
+  "author": "Kene",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-plugin-tailwindcss": "^3.6.0",
+    "postcss-cli": "^10.0.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "cross-env": "^7.0.3",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.14"
+  }
+}
