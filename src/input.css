@@ -1,0 +1,104 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    --color-text-base: #ffff;
+    --color-text-muted: #c7d2fe;
+    --color-text-inverted: #4f46e5;
+    --color-fill: #4338ca;
+    --color-button-accent: #ffff;
+    --color-button-accent-hover: #eef2ff;
+    --color-button-muted: #6366f1;
+  }
+}
+
+.hello {
+  @apply text-3xl font-bold text-blue-300 underline;
+}
+
+.nav {
+  @apply absolute top-0 z-50 flex w-full items-center justify-between px-2 py-3;
+}
+
+.call-to-action {
+  @apply ml-3 mb-3 rounded bg-white px-4 py-2 text-xs font-bold uppercase text-gray-800 shadow outline-none hover:shadow-md focus:outline-none active:bg-gray-100 lg:mr-1 lg:mb-0;
+}
+
+.text-gradient {
+  background: radial-gradient(rgb(239, 241, 255), rgb(0, 0, 0)) 50% 100% / 100%
+    200%;
+  background-position: 50% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cpu-gradient-1 {
+  background: linear-gradient(
+    to right top,
+    #194189 0%,
+    #3b4980 25%,
+    #8738a7 100%
+  );
+}
+
+.section-gpu-img {
+  background-image: url("https://www.apple.com/v/macbook-air-m1/b/images/overview/graphics_bg_endframe__pj20hcxs4ga6_large_2x.jpg");
+}
+
+.cpu-width {
+  width: 96%;
+
+  /* @media screen(lg) {
+    width: 90%;
+  } */
+}
+
+.cpu-violet {
+  color: #c48cfc;
+}
+
+.section {
+  /* padding: 15rem 3rem;
+  border-top: 1px solid #ddd; */
+
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.paragragh-color {
+  color: rgb(161, 161, 166);
+}
+
+.paragragh-center {
+  @apply mt-12 w-9/12 font-topic text-xl font-semibold font-medium sm:mt-6 sm:w-8/12 sm:text-2xl md:text-2xl  md:leading-tight lg:text-3xl;
+}
+
+.paragragh-center-small {
+  @apply ml-2 whitespace-nowrap text-center font-topic text-xl font-semibold font-medium sm:text-xl md:text-2xl lg:ml-4 lg:text-3xl;
+}
+
+.icon {
+  @apply mt-2.5 h-4 w-4 rotate-180 fill-white sm:h-2 sm:w-2 md:h-7 md:w-7 lg:h-9 lg:w-9;
+}
+
+.main-link {
+  @apply flex items-center justify-center text-white sm:text-3xl md:text-4xl;
+}
+
+.welcome-header {
+  @apply my-2 w-full whitespace-nowrap font-head text-xl font-semibold text-white sm:my-1 sm:text-xl md:my-3 md:text-3xl lg:my-4 lg:text-3xl;
+}
+
+.m1-icon {
+  @apply mr-auto ml-auto mt-12 flex w-full flex-col items-center justify-center text-center sm:flex-col md:flex-col lg:flex-row;
+}
+
+.paragragh-text {
+  @apply mt-12 w-8/12 font-topic text-xl font-semibold font-medium  leading-tight sm:mt-6 sm:text-xl md:text-2xl  lg:w-7/12 lg:text-2xl;
+}

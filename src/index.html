@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <script defer src="/script.js"></script>
+  </head>
+  <body class="bg-black">
+    <nav class="nav">
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            href="#home"
+            class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-skin-base"
+            >home</a
+          >
+          <button
+            class="btn cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden lg:outline-none focus:outline-none"
+            type="button"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow bg-white item-center justify-content lg:bg-transparent lg:shadow-none hidden"
+          id="collapse-nav"
+        >
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a
+                href="#ipad"
+                class="lg:text-white lg:hover:text-gray-300 uppercase text-gray-800 px-3 py-4 lg:py-2 flex item-center text-md font-bold"
+                ><i
+                  class="fas fa-tablet text-xl lg:text-gray-300 text-gray-500 leading-lg mr-2"
+                ></i
+                >Ipad</a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                href="#macbook"
+                class="lg:text-white lg:hover:text-gray-300 uppercase text-gray-800 px-3 py-4 lg:py-2 flex item-center text-md font-bold"
+                ><i
+                  class="fas fa-laptop text-xl lg:text-gray-300 text-gray-500 leading-lg mr-2"
+                ></i
+                >mackbook</a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                href="#team"
+                class="lg:text-white lg:hover:text-gray-300 uppercase text-gray-800 px-3 py-4 lg:py-2 flex item-center text-md font-bold"
+                ><i
+                  class="fas fa-users text-xl lg:text-gray-300 text-gray-500 leading-lg mr-2"
+                ></i
+                >Team</a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                href="#contact"
+                class="lg:text-white lg:hover:text-gray-300 uppercase text-gray-800 px-3 py-4 lg:py-2 flex item-center text-md font-bold"
+                ><i
+                  class="fas fa-address-card text-xl lg:text-gray-300 text-gray-500 leading-lg mr-2"
+                ></i
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                href=""
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs font-bold uppercase"
+              >
+                <i
+                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg"
+                ></i>
+                <span class="lg:hidden inline-block ml-2"></span>
+              </a>
+            </li>
+            <li class="flex items-center">
+              <a
+                href=""
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs font-bold uppercase"
+              >
+                <i
+                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg"
+                ></i>
+                <span class="lg:hidden inline-block ml-2"></span>
+              </a>
+            </li>
+            <li class="flex item-center">
+              <button
+                class="call-to-action"
+                type="button"
+              >
+                <i class="fas fa-circle-down mr-2"></i> Buy new Macbook
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="md:h-2/3 lg:h-screen h-2/4 sm:h-2/3 w-screen overflow-hidden">
+      <div
+        class="relative pt-16 lg:pt-32 flex content-center items-center justify-center  mx-2.5"
+        id="home"
+      >
+        <div class="overflow-hidden bg-center bg-cover bg-no-repeat mt-32">
+          <img
+            class="lg:ml-28 md:ml-20 sm:ml-12 ml-16 mr-auto sm:my-auto flex justify-center items-center mb-4"
+            src="https://www.apple.com/v/macbook-air-m1/b/images/overview/hero_endframe__ea0qze85eyi6_large_2x.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+
+    <section class="section section-info mb-40 mx-auto relative pt-5 flex flex-col content-center items-center justify-center min-h-full">
+      <div class="item-center flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+          <div class="lg:pr-12 md:pr-7 sm:pr-0">
+            <h1 class="welcome-header"> Welcome to Apple</h1>
+          </div>
+        </div>
+      <div class="section-info-message items-center justify-center flex flex-col text-center w-full mr-auto ml-auto">
+        <h1 class="main-heading lg:text-7xl sm:text-4xl md:text-5xl text-3xl text-white font-topic font-bold whitespace-nowrap text-gradient ">Power. It's in the Air.</h1>
+        <p class="paragragh-center paragragh-color">MacBook Air with M1 is an incredibly portable laptop — it’s nimble and quick, with a silent, fanless design and a beautiful Retina display. Thanks to its slim profile and all‑day battery life, this Air moves at the speed of lightness.</p>
+      </div>
+      <div class="m1-icon section-info-icon">
+        <img src="https://www.apple.com/v/macbook-air-m1/b/images/overview/hero_icon__gkgkr96pgb2a_large_2x.jpg" alt="" class="md:w-20 sm:w-16 lg:w-32 w-20 flex item-center justify-center">
+        <p class="paragragh-center-small paragragh-color">Super Charged by Apple M1 Chip</p>
+      </div>
+      <div class="section-info-link items-center justify-center flex text-center w-full h-0 mr-auto ml-auto mt-8 text-white">
+        <a href="" class="main-link hover:border-solid hover:border-white hover:border-b-4">Watch the event on our U.S site
+          <svg class="icon link-icon">
+            <use xlink:href="../img/icon.svg#icon-chevron-left1"></use>
+          </svg>
+        </a>
+      </div>
+
+    </section>
+
+    <section class="section section-chip relative mt-40 lg:mt-60 md:mt-60 flex flex-col min-h-full overflow-hidden">
+
+      <div class="justify-start lg:ml-52 md:ml-32 sm:ml-28 ml-16 mr-auto flex flex-col text-center w-full z-10">
+        <img src="	https://www.apple.com/v/macbook-air-m1/b/images/overview/m1_eyebrow__dp0aixbj1pg2_large_2x.png" alt="" class="md:w-32 sm:w-16 lg:w-44 w-28">
+        <h1 class="main-heading lg:text-7xl sm:text-5xl md:text-5xl text-4xl w-7/12 text-left text-white font-topic font-bold md:whitespace-nowrap whitespace-normal flex justify-start mt-4">Small Chip. Giant Leap.</h1>
+        <p class="paragragh-color paragragh-text flex justify-start text-left ">
+          M1 is our first chip designed specifically for Mac. Apple silicon integrates the CPU, GPU, Neural Engine, I/O, and so much more onto a single tiny chip. Packed with an astonishing 16 billion transistors, M1 delivers exceptional performance, custom technologies, and unbelievable power efficiency — a major breakthrough for Mac.
+        </p>
+      </div>
+
+      <div class="section-chip-img flex justify-center items-center -mt-1 bg-center bg-cover lg:scale-150">
+        <!-- <img src="https://www.apple.com/newsroom/images/product/mac/standard/Apple_new-m1-chip-graphic_11102020_big.jpg.large.jpg" alt="" class="w-9/12 h-9/12"> -->
+        <img src="../img/chip.jpg" alt="" class="w-screen h-full">
+      </div>
+      
+    </section>
+
+    <section class="section section-cpu z-20 flex items-center justify-center min-h-full overflow-hidden mb-6">
+      <div class="relative cpu-gradient-1 h-full pb-12 mdX:pb-0 cpu-width vsm:w-full vsm:rounded-none text-gray-500 flex mdX:flex-col justify-start rounded-3xl overflow-hidden">
+          <h1 class="absolute top-11 left-11 w-full text-xl text-white text-topic uppercase font-medium">cpu</h1>
+
+          <div class="flex flex-col justify-start ml-7 mt-36 ">
+            <h1 class="text-4xl lg:text-7xl mdX:text-5xl text-topic font-bold cpu-violet mb-4">8-core CPU</h1>
+            <h1 class="text-5xl lg:text-7xl text-topic font-bold text-white w-5/6 lg:w-3/6 sm:w-3/6 md:w-3/6 whitespace-wrap mb-5 text-left">Devours tasks. Sips battery.</h1>
+            <p class="text-white w-5/6 md:w-3/6 lg:w-2/6 font-semibold font-topic text-xl">The CPU on M1 isn’t just astonishingly fast — it balances high-performance cores with efficiency cores that crush everyday jobs while using far less energy. With that kind of processing power, MacBook Air can take on intensive tasks like professional-level video editing and action-packed gaming.</p>
+          </div>
+          <div class="section-cpu-img absolute mdX:relative mdX:justify-center mdX:-mb-10 mdX:bottom-0 mt-0 mdX:mt-12 bottom-16 right-0 flex justify-end">
+            <img src="https://www.apple.com/v/macbook-air-m1/b/images/overview/processor__gb8d1ide5126_large_2x.png" alt="" class="w-3/6 h-full mdX:w-full">
+          </div>
+        
+      </div>
+    </section>
+
+    <section class="section section-gpu flex justify-center items-center min-h-full  overflow-hidden mb-40">
+      <div class="relative section-gpu-img bg-center bg-cover bg-no-repeat pb-12 mdX:pb-0 cpu-width  vsm:w-full  vsm:rounded-none text-gray-500 flex mdX:flex-col justify-between mdX:justify-center items-center rounded-3xl overflow-hidden">
+        <h1 class="absolute top-11 left-11 w-full text-xl text-white text-topic uppercase font-medium">gpu</h1>
+
+        <div class="flex flex-col justify-start w-3/6 vsm:w-5/6 mdX:w-5/6 my-auto vsm:my-0 mdX:my-4  ml-16 vsm:ml-0 mdX:ml-0 mt-36 vsm:mt-16 mdX:mt-16 py-32 mdX:py-16 vsm:py-16 md:py-20">
+          <h1 class="text-primaryLight text-primaryLight text-7xl vsm:text-5xl lg:text-7xl md:text-6xl mdX:text-5xl text-topic font-bold">7-Core GPU</h1>
+          <h1 class="text-7xl lg:text-7xl vsm:text-5xl md:text-6xl mdX:text-5xl text-topic font-bold text-white w-5/6 lg:w-11/12 sm:w-10/12 md:w-10/12 whitespace-wrap mb-5 text-left">Plays hard. Works wonders.</h1>
+        </div>
+        
+        <div class="flex justify-start w-2/6 vsm:w-5/6 mdX:w-4/6 items-center py-32 md:py-20 vsm:py-16 mdX:py-12 mr-16 vsm:mr-4  mt-36 mdX:mt-0 vsm:mt-0">
+          <p class="text-white  font-semibold font-topic text-xl text-left">The GPU in M1 delivers lightning-fast integrated graphics. So you can create, edit, and seamlessly play back multiple streams of full quality 4k video without dropping a frame</p>
+        </div>
+        
+
+      </div>
+    </section>
+
+  </body>
+</html>
